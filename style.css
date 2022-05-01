@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Pink: hsl(322, 100%, 66%);
+    --Light-Pink: hsl(321, 100%, 78%);
+    --Light-Red: hsl(0, 100%, 63%);
+    --white:#fff;
+    --section-transition:0.3s;
+    --shadow:rgb(165, 164, 164);
+    --light:#777;
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Very-Pale-Blue: hsl(207, 100%, 98%);
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* Nav */
+nav{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav .container a{
+    font-family: 'Open Sans', sans-serif;
+    color: var(--Pink);
+    padding: 5px 25px;
+    font-weight: 400;
+    font-size: clamp(.5rem, 5vh, 1rem);
+    background-color: var(--white);
+    border: 1px var(--Pink) solid;
+    text-decoration: none;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    transition: var(--section-transition);
+    -webkit-transition: var(--section-transition);
+    -moz-transition: var(--section-transition);
+    -ms-transition: var(--section-transition);
+    -o-transition: var(--section-transition);
+}
+nav .container a:hover{
+    box-shadow: 1px 1px 5px var(--Light-Pink);
+}
+@media (max-width:768px) {
+    nav .container img{
+        width: 150px;
+    }
+}
+/* Header */
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    height: 60vh;
+}
+header .container p{
+    font-family: 'Open Sans', sans-serif;
+    width: 56ch;
+    margin: auto;
+}
+@media (max-width:768px) {
+    header .container p{
+        width: auto;
+    }
+}
+header .container a,
+#btn-get-started{
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--Pink);
+    padding: 10px 35px;
+    font-weight: 700;
+    font-size: clamp(.5rem, 5vh, .8rem);
+    color: var(--white);
+    border: 1px var(--Pink) solid;
+    text-decoration: none;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    transition: var(--section-transition);
+    -webkit-transition: var(--section-transition);
+    -moz-transition: var(--section-transition);
+    -ms-transition: var(--section-transition);
+    -o-transition: var(--section-transition);
+    box-shadow: 1px 1px 5px var(--shadow);
+}
+header .container a:hover,
+#btn-get-started:hover{
+    box-shadow: 1px 1px 5px var(--Light-Pink);
+    background-color: var(--Light-Pink);
+    border-color:var(--Light-Pink) ;
+}
+.img img{
+    width: 100%;
+}
+.stats .stat{
+    position: relative;
+    margin: 70px 0;
+}
+.stats .stat .notice img{
+    position: absolute;
+    width: 25px;
+    left: 10px;
+    top: -25px;
+}
+.stats .stat h2{
+font-size: 3rem;
+}
+.stats .stat span{
+    font-family: 'Open Sans', sans-serif;
+    color: var(--light);
+    font-weight: 400;
+}
+@media (max-width:768px){
+    .stats{
+        flex-direction: column;
+        gap: 150px;
+        margin: 170px 0;
+    }
+}
+.info{
+    margin: 150px 0;
+    column-gap: 50px;
+}
+@media (max-width:768px){
+    .info{
+        margin: 200px 0;
+        flex-direction: column-reverse !important;
+    }
+    .info .text{
+        text-align: center !important;
+    }
+}
+.info img{
+    width: 350px;
+    max-width: 85%;
+    margin: 20px auto;
+}
+.info p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: .8rem;
+}
+.get-start{
+    margin: 100px 0;
+}
+footer{
+    background-color: var(--Very-Dark-Cyan);
+    padding: 100px 0 50px;
+    background-image: url(images/bg-footer-top-desktop.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+footer .container{
+    justify-content: space-around;
+}
+@media (max-width:768px){
+    footer .container{
+        flex-direction: column-reverse !important;
+    }
+}
+footer img[alt="logo"]{
+    width: 150px;
+    filter: brightness(100);
+    -webkit-filter: brightness(100);
+}
+footer p,span{
+    font-family: 'Open Sans', sans-serif;
+    color: var(--white);
+    font-weight: 400;
+    font-size: .7rem;
+    width: 40ch;
+    margin: 20px 0;
+}
+.contact-us{
+    margin-bottom: 10px;
+}
+.contact-us img{
+    margin-right: 10px;
+}
+footer .social{
+    margin-top: 30px;
+}
+footer .social a{
+    color: var(--white);
+    text-decoration: none;
+    padding-right: 10px;
+    font-size: 1.3rem;
+    transition: var(--section-transition);
+    -webkit-transition: var(--section-transition);
+    -moz-transition: var(--section-transition);
+    -ms-transition: var(--section-transition);
+    -o-transition: var(--section-transition);
+}
+footer .social a i{
+cursor: pointer;
+}
+footer .social a:nth-child(1):hover{
+    color: #1877F2;
+}
+footer .social a:nth-child(2):hover{
+    color: #E4405F;
+}
+footer .social a:nth-child(3):hover{
+    color: #1DA1F2;
+}
+footer form input[type="email"]{
+    outline: 1px solid var(--Pink);
+    border: 0;
+    padding:5px 15px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    width: 60%;
+    margin-right: 20px;
+}
+footer form input[type="submit"]{
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--Pink);
+    padding:7px 20px;
+    font-weight: 700;
+    font-size: clamp(.5rem, 5vh, .8rem);
+    color: var(--white);
+    border: 1px var(--Pink) solid;
+    text-decoration: none;
+    border-radius: 40px;
+    -webkit-border-radius: 3px;
+    transition: var(--section-transition);
+    -webkit-transition: var(--section-transition);
+    -moz-transition: var(--section-transition);
+    -ms-transition: var(--section-transition);
+    -o-transition: var(--section-transition);
+}
+footer form input[type="submit"]:hover{
+    background-color: var(--Light-Pink);
+    border-color:var(--Light-Pink) ;
+}
+@media (max-width:768px){
+    footer form{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        position: relative;
+    }
+    footer form input[type="email"]{
+        width: 100%;
+        margin: auto;
+    }
+    footer form input[type="submit"]{
+        width: 100px;
+    }
+}
