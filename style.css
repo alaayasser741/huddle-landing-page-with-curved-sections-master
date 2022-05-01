@@ -113,15 +113,10 @@ header .container a:hover,
     left: 10px;
     top: -25px;
 }
-.stats .stat .text{
-flex-basis:35%;
-}
+
 .stats .stat h2{
 font-size: 3rem;
-}
-.stats .stat span{
-    font-family: 'Open Sans', sans-serif;
-    color: var(--light);
+}-light);
     font-weight: 400;
 }
 @media (max-width:768px){
@@ -135,6 +130,13 @@ font-size: 3rem;
     margin: 150px 0;
     column-gap: 50px;
 }
+.info .text{
+flex-basis:35%;
+}
+
+.stats .stat span{
+    font-family: 'Open Sans', sans-serif;
+    color: var(-
 @media (max-width:768px){
     .info{
         margin: 200px 0;
