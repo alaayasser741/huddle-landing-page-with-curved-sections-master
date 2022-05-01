@@ -113,6 +113,9 @@ header .container a:hover,
     left: 10px;
     top: -25px;
 }
+.stats .stat .text{
+flex-basis:35%;
+}
 .stats .stat h2{
 font-size: 3rem;
 }
